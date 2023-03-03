@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TextSolver/static/css/main.2784506f.css",
+    "main.js": "/TextSolver/static/js/main.07a76ffb.js",
+    "static/js/787.719ec76d.chunk.js": "/TextSolver/static/js/787.719ec76d.chunk.js",
+    "index.html": "/TextSolver/index.html",
+    "main.2784506f.css.map": "/TextSolver/static/css/main.2784506f.css.map",
+    "main.07a76ffb.js.map": "/TextSolver/static/js/main.07a76ffb.js.map",
+    "787.719ec76d.chunk.js.map": "/TextSolver/static/js/787.719ec76d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2784506f.css",
+    "static/js/main.07a76ffb.js"
+  ]
+}
