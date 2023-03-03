@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+         <script>
+                // " use strict " 
+                //   strict ki help se hme let const lgane ki jarurt mahi pdti hai 
+                let a= 34;
+                a =4454+ 8;
+                 console.log(a);
+                //  number
+                // objects
+                // booleans -- true or false
+                // string 
+                // undefined
+                //  null
+
+        function hello(){
+                console.log('hey herry')
+        }
+        let obja = {
+                r: 34,
+                m: 64,
+                func: function myfunc(number){
+                        console.log('the number is'+ number);
+                     
+                }
+        }
+           document.addEventListener("click", function click(){
+                    console.log('clicked');
+                //     alert("hello");
+               let cnfrm = confirm("are you sure");
+               console.log(cnfrm);
+           })
+
+           let arr = [45,56,67];
+           console.log(this);
+           function myfunc(number){
+                console.log('the number is'+ this);   
+           }
+        //    myfunc();.
+        let mobj ={
+                a: this, 
+                myfunc: (number)=>{
+                        console.log('the number is'+ this);
+                        
+                }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(() => {
+                console.log('yayayy');
+        }, 3000);
+        console.log('mai neche wali script hun');
+        
+        
+         </script>
+</body>
+</html>
