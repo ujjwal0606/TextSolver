@@ -8,7 +8,7 @@ import About from './components/About';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/TextSolver",
     element: <App />,
   },
   {
