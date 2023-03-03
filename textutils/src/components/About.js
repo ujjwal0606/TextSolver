@@ -1,6 +1,9 @@
 import React,{useState} from 'react'
+import Navbar from './Navbar'
 
 export default function About() {
+  const [mode, setMode] = useState('light'); //whether dark mode is enable or not 
+  const [alert, setAlert] = useState(null);
   // let myStyle =
 const [myStyle, setmyStyle] = useState({
   color: 'black',
@@ -26,8 +29,32 @@ else{
   setBtnText("Enable Dark Mode");
 }
 }
+
+const toggleMode = ()=>{
+  if(mode=== 'light'){
+    setMode('dark');
+    document.body.style.backgroundColor = '#055160';
+    showAlert('dark mode has be enabled',"success")
+  }
+  else{
+    setMode('light');
+    document.body.style.backgroundColor = 'white';
+    showAlert('light mode has be enabled',"success")
+  }
+}
+const showAlert =(message, type)=>{    //13
+  setAlert({
+    msg: message,
+    type: type
+  })
+  setTimeout(() => {
+    setAlert(null)
+  }, 3000);
+}
   
   return (
+    <>
+     <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
     <div className='container' style={myStyle}>
       <h1 className='my-3'>About us</h1>
       <div className="accordion" id="accordionExample">
@@ -72,5 +99,7 @@ else{
         <button onClick={toggleStyle} type="button" className="btn btn-primary ">{btntext}</button>
       </div>
     </div>
+    </>
+
   )
   }
